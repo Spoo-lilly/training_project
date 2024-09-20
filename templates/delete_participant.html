@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Participant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Delete Participant</h1>
+        <form method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="email_to_delete">Email</label>
+                <input type="email" class="form-control" name="email_to_delete" required>
+            </div>
+            <button type="submit" class="btn btn-danger btn-block">Delete</button>
+        </form>
+        <a href="{{ url_for('main') }}" class="btn btn-secondary btn-block mt-3">Back to Menu</a>
+    </div>
+</body>
+</html>
